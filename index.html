@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100e0b">
+  <title>Ai bá khí nhất?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="heading">
+      <p class="eyebrow">THE ULTIMATE RANDOMIZER</p>
+      <h1>AI BÁ KHÍ NHẤT?</h1>
+      <p class="subtitle">Vận mệnh đã được định đoạt...</p>
+    </header>
+
+    <section class="upload-panel">
+      <label class="upload-box" for="imageInput">
+        <span class="folder-icon">📁</span>
+        <strong>CHỌN ẢNH TỪ THIẾT BỊ</strong>
+        <small>JFIF · JPG · JPEG · JEG · PNG</small>
+        <input id="imageInput" type="file"
+          accept=".jfif,.jpg,.jpeg,.jeg,.png,image/jpeg,image/png" multiple>
+      </label>
+      <div class="list-heading">
+        <span>Danh sách ảnh</span>
+        <strong id="imageCount">0 ảnh</strong>
+      </div>
+      <div id="imageList" class="image-list"></div>
+    </section>
+
+    <section class="draw-section">
+      <p class="section-label">✦ ĐANG TÌM KIẾM CHÂN MỆNH ✦</p>
+      <div id="stage" class="stage">
+        <div id="placeholder" class="placeholder">
+          <div class="crown">👑</div>
+          <h2>AI SẼ LÀ NGƯỜI ĐƯỢC CHỌN?</h2>
+          <p>Hãy tải ảnh lên để bắt đầu</p>
+        </div>
+        <img id="preview" class="preview hidden" alt="Ảnh đang được chọn">
+        <div id="winnerBanner" class="winner-banner hidden">
+          <span>✦ THE CHOSEN ONE ✦</span>
+          <strong>BÁ KHÍ NHẤT!</strong>
+        </div>
+      </div>
+
+      <p id="status" class="status" aria-live="polite">Sẵn sàng khai chiến!</p>
+      <div id="timer" class="timer">05.00</div>
+      <button id="startButton" class="start-button" disabled>BẮT ĐẦU</button>
+      <button id="resetButton" class="reset-button" type="button">Đặt lại kết quả</button>
+    </section>
+
+    <footer>POWERED BY RANDOM DESTINY · 2026</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
